@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopClock"
         mc:Ignorable="d"
-        Title="Clock" Height="230" Width="220" Loaded="LoadWindow" >
+        Title="Clock" Height="230" Width="220" Loaded="LoadWindow" Background="Transparent"
+		AllowsTransparency="True"
+		WindowStyle="None"
+		Topmost="True"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Canvas Width="200" Height="200">
         <Line x:Name="HourLine"  Stroke="Black" Fill="Black" 
               X1="100" Y1="100" X2="100" Y2="35"              
