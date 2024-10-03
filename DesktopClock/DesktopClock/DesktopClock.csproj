@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="clock.ico" />
+    <None Remove="Resources\clock.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="clock.ico" />
+    <Resource Include="Resources\clock.ico" />
+  </ItemGroup>
+
 </Project>

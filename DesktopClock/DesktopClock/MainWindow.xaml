@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopClock"
         mc:Ignorable="d"
-        Title="Clock" Height="230" Width="220" Loaded="LoadWindow" Background="Transparent"
+        Title="DesktopClock" Height="230" Width="220" Loaded="LoadWindow" Background="Transparent"
 		AllowsTransparency="True"
 		WindowStyle="None"
 		Topmost="True"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+		Icon="/DesktopClock;component/Resources/clock.ico">
     <Canvas Width="200" Height="200">
-        <Line x:Name="HourLine"  Stroke="Black" Fill="Black" 
+        <Line x:Name="HourLine"  Stroke="White" Fill="White" 
               X1="100" Y1="100" X2="100" Y2="35"              
                StrokeThickness="3" >
             <Line.RenderTransform>
@@ -19,7 +20,7 @@
                                   CenterX="100" CenterY="100"/>
             </Line.RenderTransform>
         </Line>
-        <Line x:Name="MinuteLine"  Stroke="Black" Fill="Black" 
+        <Line x:Name="MinuteLine"  Stroke="White" Fill="White" 
               X1="100" Y1="100" X2="100" Y2="15"              
                StrokeThickness="2" >
             <Line.RenderTransform>
@@ -27,7 +28,7 @@
                                  CenterX="100" CenterY="100"/>
             </Line.RenderTransform>
         </Line>
-        <Line x:Name="SecondLine"  Stroke="Black" Fill="LightGray"
+        <Line x:Name="SecondLine"  Stroke="White" Fill="LightGray"
               X1="100" Y1="120" X2="100" Y2="10"  >
             <Line.RenderTransform>
                 <RotateTransform x:Name="AngleSecond" Angle="0"  
